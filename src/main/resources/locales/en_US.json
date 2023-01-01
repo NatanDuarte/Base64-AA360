@@ -1,0 +1,24 @@
+{
+  "label": "Base64 Encoder Decoder",
+  "description": "Encodes and decodes base64 strings",
+  "Base64DecoderDetails.label": "Base64 Decoder",
+  "Base64DecoderDetails.description": "Decodes an given string",
+  "Base64DecoderDetails.node_label": "Base64 String",
+  "Base64DecoderDetails.return_label": "Decoded String",
+  "Base64DecoderDetails.return_label_description": "returns the base64 code of an given string (UTF-8)",
+  "Base64DecoderDetails.string_message.label": "String for decoding",
+  "Base64DecoderDetails.error_on_decoding": "Error on decoding:\n",
+
+  "Base64EncoderDetails.label": "Base64 Encoder",
+  "Base64EncoderDetails.description": "Encodes an given string",
+  "Base64EncoderDetails.node_label": "String text you want to encode",
+  "Base64EncoderDetails.return_label": "Encoded String",
+  "Base64EncoderDetails.return_label_description": "returns base64 encoded string (UTF-8)",
+  "Base64EncoderDetails.string_message.label": "String for encoding",
+  "Base64EncoderDetails.error_on_encoding": "Error on encoding:\n",
+
+  "Base64DecoderDetails.error_string_empty": "Message must not be empty",
+
+  "group": "Natan Duarte",
+  "vendor": "NatanDuarte"
+}

@@ -1,0 +1,24 @@
+{
+    "label": "Base64 Encoder Decoder",
+    "description": "Realiza Encode e decodes em base64 de strings",
+    "Base64DecoderDetails.label": "Base64 Decoder",
+    "Base64DecoderDetails.description": "Realiza Decode de uma string",
+    "Base64DecoderDetails.node_label": "Base64 String",
+    "Base64DecoderDetails.return_label": "String decodificada",
+    "Base64DecoderDetails.return_label_description": "retorna um texto decodificado",
+    "Base64DecoderDetails.string_message.label": "String Decodificada",
+    "Base64DecoderDetails.error_on_encoding.label": "Erro ao realizar decoding:\n",
+
+    "Base64EncoderDetails.label": "Base64 Encoder",
+    "Base64EncoderDetails.description": "Realiza Encode de uma string",
+    "Base64EncoderDetails.node_label": "Texto a ser codificado",
+    "Base64EncoderDetails.return_label": "Encoded codificada",
+    "Base64EncoderDetails.return_label_description": "retorna uma string codificada",
+    "Base64EncoderDetails.string_message.label": "String Codificada",
+    "Base64EncoderDetails.error_on_encoding.label": "Erro ao realizar encoding:\n",
+
+    "Base64DecoderDetails.error_string_empty": "A mensagem não pode ser vazia",
+
+    "group": "Natan Duarte",
+    "vendor": "NatanDuarte"
+}
