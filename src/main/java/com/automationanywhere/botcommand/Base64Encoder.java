@@ -10,7 +10,7 @@ import com.automationanywhere.utils.Base64Utils;
 import java.util.Objects;
 
 import static com.automationanywhere.commandsdk.model.AttributeType.TEXT;
-import static com.automationanywhere.commandsdk.model.DataType.NUMBER;
+import static com.automationanywhere.commandsdk.model.DataType.STRING;
 
 //BotCommand makes a class eligible for being considered as an action.
 @BotCommand
@@ -25,7 +25,7 @@ import static com.automationanywhere.commandsdk.model.DataType.NUMBER;
 
         //Return type information. return_type ensures only the right kind of variable is provided on the UI.
         return_label = "[[Base64EncoderDetails.return_label]]",
-        return_type = NUMBER,
+        return_type = STRING,
         return_required = true,
         return_description = "[[Base64EncoderDetails.return_label_description]]"
 )
@@ -37,7 +37,7 @@ public class Base64Encoder {
             //Idx 1 would be displayed first, with a text box for entering the value.
             @Idx(index = "1", type = TEXT)
             //UI labels.
-            @Pkg(label = "[[Base64EncoderDetails.filePath.label]]")
+            @Pkg(label = "[[Base64EncoderDetails.label]]")
             //Ensure that a validation error is thrown when the value is null.
             @NotEmpty
             String message
