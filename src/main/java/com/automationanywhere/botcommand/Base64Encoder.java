@@ -7,6 +7,8 @@ import com.automationanywhere.commandsdk.annotations.*;
 import com.automationanywhere.commandsdk.annotations.rules.NotEmpty;
 import com.automationanywhere.utils.Base64Utils;
 
+import java.util.Objects;
+
 import static com.automationanywhere.commandsdk.model.AttributeType.TEXT;
 import static com.automationanywhere.commandsdk.model.DataType.NUMBER;
 
@@ -43,7 +45,7 @@ public class Base64Encoder {
 
         //Internal validation, to disallow empty strings. No null check needed as we have NotEmpty on firstString.
         if ("".equals(message.trim()))
-            throw new BotCommandException("A mensagem não pode ser vazia");
+            throw new BotCommandException("[[Base64DecoderDetails.error_string_empty]]");
 
 
         //Business logic
@@ -54,11 +56,12 @@ public class Base64Encoder {
     }
 
     private static String doBusinessLogic(String message) {
+        Objects.requireNonNull(message, "[[Base64DecoderDetails.error_string_empty]]");
         String base64;
         try {
             base64 = Base64Utils.encode(message);
         } catch (Exception e) {
-            throw new BotCommandException("Erro ao realizar encoding " + e);
+            throw new BotCommandException("[[Base64EncoderDetails.error_on_encoding]]" + e);
         }
         return base64;
     }
